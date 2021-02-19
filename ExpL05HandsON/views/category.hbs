@@ -1,0 +1,23 @@
+<h1>Add a new category</h1>
+<form action="/category" method="POST">
+    <div>
+        <label for="full_name">Name: </label>
+        <input type="text" name="full_name">
+    </div>
+    <div>
+        <label for="last_update">Last Update: </label>
+        <input type="text" name="last_Update">
+    </div>
+    <div>
+        <label for="default_price">Default Price: </label>
+        <input type="text" name="default_price">
+    </div>
+    <div>
+        <button type="submit">Submit</button>
+    </div>
+</form>
+<ul>
+{{#each category}}
+<li>Name: {{name}} Default Price: {{default_price}}</li>
+{{/each}}
+</ul>
